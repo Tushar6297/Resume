@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        resume writing
+    </title>
+    <link href="https://fonts.googleapis.com/css2?family=Shadows+Into+Light&family=Varela+Round&display=swap"
+        rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+</head>
+<style>
+    * {
+        margin: 0;
+    }
+
+
+    /* navigation */
+    .main {
+        display: flex;
+        padding: 30px;
+        background-color: beige;
+        font-weight: bold;
+
+
+    }
+
+    ul {
+        flex: 50%;
+    }
+
+
+    ul li {
+        list-style-type: none;
+
+
+
+    }
+
+    ul li a {
+        text-decoration: none;
+        margin-right: 70px;
+        color: black;
+        text-shadow: 5px 5px 9px rgb(214, 11, 163);
+
+    }
+
+    .main h1 {
+        flex: 50%;
+        text-align: center;
+        color: rgb(201, 28, 155);
+        font-family: Varela Round;
+        /* text-shadow: 3px 3px 5px rgb(22, 174, 9); */
+
+
+    }
+
+    .main h1:hover {
+        color: chartreuse;
+    }
+
+    ul li a:hover {
+        background-color: darkorange;
+        padding: 4px;
+        border-radius: 4px;
+    }
+
+    /* section/content */
+    .content {
+        display: flex;
+        height: 550px;
+        padding-top: 100px;
+        background-color: rgb(210, 166, 204);
+    }
+
+    .content .info {
+        flex: 65%;
+        margin-top: 100px;
+        text-align: center;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+     .content .img {
+        flex: 35%;
+        padding-right: 20px;
+        
+       
+      
+    }
+    .img img{
+        border-radius: 50%;
+    }
+
+
+
+    /* Qualification */
+    .Quali {
+        height: 300px;
+        background-color: dimgrey;
+        display: flex;
+        
+
+    }
+
+    #mainqulification .course {
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        flex: 50%;
+    }
+
+    .skill {
+        flex: 50%;
+        margin: 10px;
+    }
+
+    /* footer content */
+    .Contact {
+        background-color: cadetblue;
+        padding: 30px;
+
+    }
+
+    @media(max-width:700px) {
+
+        .main,
+        .content,
+        .Quali {
+            flex-direction: column;
+        }
+
+    }
+</style>
+
+<body>
+    <!-- navigation -->
+
+    <nav id="mainnav">
+        <nav class="main">
+            <h1>myResume</h1>
+            <ul>
+                <li>
+                    <a href="#"> Home</a>
+                    <a href="#mainsection">Courses</a>
+                    <a href="#mainqulification">Qualifaction</a>
+                    <a href="#mainfooter">Contact</a>
+                </li>
+            </ul>
+        </nav>
+    </nav>
+    <!-- section part -->
+    <section id="mainsection">
+        <div class="content">
+            <div class="info">
+                <h1>Full stack Devoloper</h1>
+                <span style="border-bottom: solid; font-size: 25px;"> Java Fullstack</span>
+                <p>I have completed fullstack devolopement course. i am expert in frontend as well as backend.</p>
+
+            </div>
+
+
+            <div class="img">
+                <img src="assets/images/tushar.jpg" height="350px" width="100%">
+                <h2 style="text-align: center;">Tushar More</h2>
+            </div>
+        </div>
+    </section>
+    <!-- Qualification -->
+    <section id="mainqulification">
+        <div class="Quali">
+            <div class="course" style="text-align:center; margin-top: 110px;">
+                <h1>Gratuate in BCA</h1>
+                <h2>Frontend + Backend</h2>
+
+            </div>
+
+            <div class="skill">
+                <span style="border-bottom: solid; font-size: 20px; font-weight: bold;">FRONTEND</span>
+                <ol>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>BOOTSTRAP</li>
+                    <li>JAVASCRIPT</li>
+                    <li>ANGULAR</li>
+                </ol>
+
+                <span style="border-bottom: solid; font-size: 20px; font-weight: bold;">BACKEND</span>
+                <ol>
+                    <li>JAVA</li>
+                    <li>SPRING</li>
+                    <li>SPRINGBOOT</li>
+                    <li>HIBERNATE</li>
+                    <li>MYSQL</li>
+                </ol>
+            </div>
+        </div>
+
+    </section>
+    <!-- footer content -->
+    <footer>
+        <div id="mainfooter">
+            <div class="Contact">
+                <i class="material-icons">mail</i>
+                <label for="">Email-</label>
+                <a href="mailto:tusharmore6297@gmail.com"> tusharmore6297@gmail.com</a><br>
+                <i class="material-icons">call</i>
+                <label for="">Phone-</label>
+                <a href="tel:9607030452"> 9607030452</a>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+</body>
+
+</html>
